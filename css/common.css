@@ -23,3 +23,15 @@ button {
   cursor: pointer;
 }
 
+ul.gallery {
+  list-style: circle;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-item {
+  margin: 5px;
+}
