@@ -24,7 +24,9 @@ button {
 }
 
 ul.gallery {
-  list-style: circle;
+  width: 200px;
+  height: auto;
+  list-style: none;
 }
 
 .gallery-item img {
