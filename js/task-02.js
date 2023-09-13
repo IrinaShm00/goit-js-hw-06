@@ -11,12 +11,9 @@ const ingredientsUl = document.getElementById('ingredients');
 console.log(ingredientsUl);
 
 
-ingredients.map((ingredient) => {
-const liElement = document.createElement('li');
-  liElement.textContent = ingredient;
-  liElement.classList.add('item');
-  ingredientsUl.appendChild(liElement);
+ingredients.forEach((ingredient) => {
+  const liHtml = `<li class="item">${ingredient}</li>`;
+  ingredientsUl.insertAdjacentHTML('beforeend', liHtml);
 });
-
 
 
