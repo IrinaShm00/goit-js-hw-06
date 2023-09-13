@@ -21,3 +21,6 @@ const galleryHtml = images.map(image =>
   </li>`).join(" ");
   ulElements.insertAdjacentHTML('beforeend', galleryHtml);
 console.log(galleryHtml);
+
+
+
