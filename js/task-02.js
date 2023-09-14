@@ -23,5 +23,6 @@ const liElements = ingredients.map((ingredient) => {
   console.log(liElement);
   liElement.textContent = ingredient;
   liElement.classList.add('item');
-  ingredientsUl.insertAdjacentHTML('beforeend', `<li class="item">${ingredient}</li>`);
+  return liElement;
 });
+ingredientsUl.append(...liElements);

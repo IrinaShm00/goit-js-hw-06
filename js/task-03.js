@@ -18,7 +18,7 @@ const ulElements = document.querySelector('.gallery');
 const galleryHtml = images.map(image =>
   `<li class = "gallery-item">
  <img src = "${image.url}" alt = "${image.alt}">
-  </li>`).join(" ");
+  </li>`).join("");
   ulElements.insertAdjacentHTML('beforeend', galleryHtml);
 console.log(galleryHtml);
 
